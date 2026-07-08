@@ -1,0 +1,33 @@
+print("WELCOME TO THE TREASURE HUNT GAME...")
+print("ARE YOU ALL SET TO FIND THE TREASURE? LESSSGOOOO!!!!")
+c1=input("At crossroad,do you want to turn left or right?")
+c1=c1.lower()
+if c1=="right":
+   print("You have reached the sea shore safely")
+   c2=input("Do you want to 'wait' for the boat or 'swim' to the other seashore?")
+   c2=c2.lower()
+   if c2=="wait":
+       print("You have reached the other seashore safely")
+       c3=input("You just spot a house with three doors: red,yellow and blue.Which one do you choose?").lower()
+       if c3=="yellow":
+           c4=input("You spot 2 berries tree: pink cranberries or violet cranberries.Which one you would eat?").lower()
+            if c4=="pink":
+                print("You just found the trasure at the hidden hole in the tree trunk")
+             elif c4=="violet":
+                  print("Poisonour berries.You died")
+              else:
+                   print("Invalid choice!!Disqualified")
+       elif c3=="blue":
+            print("YOU DROWNED IN WATER!!GAME OVER")
+       elif c3=="red":
+            print("ROOM FULL OF FIRE!!GAME OVER")
+        else:
+             print("Invalid choice!!Disqualified")
+   elif c2=="swim":
+         print("SHARKS KILLED YOU!!GAME OVER")
+   else:
+          print("Invalid choice!!Disqualified")
+elif c1=="left":
+     print("YOU FELL IN A POTHOLE!!GAME OVER")
+else:
+    print("Invalid choice!!Disqualified")     
